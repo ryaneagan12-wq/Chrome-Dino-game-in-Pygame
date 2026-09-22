@@ -79,7 +79,7 @@ while running:
 
     keys = pygame.key.get_pressed()
     if not game_over:
-        if (keys[pygame.K_UP] or keys[pygame.K_SPACE]) and player_y >= 850:
+        if ((keys[pygame.K_UP] or keys[pygame.K_SPACE])) and player_y >= 850:
             dino_gravity = -20
         duck = keys[pygame.K_DOWN] and player_y >= 850
 
